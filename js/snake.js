@@ -76,7 +76,7 @@ export default class Snake {
         if(this.apple.x === x && this.apple.y === y) {
             this.placeApple();
             this.body.push(this.scene.add.rectangle(0,0, this.tileSize, this.tileSize, 0x008000).setOrigin(0));
-            this.moveInterval = this.moveInterval - 100;
+            this.moveInterval = this.moveInterval - 5;
         }
     }
 
