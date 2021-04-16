@@ -5,9 +5,13 @@ export default class MainScene extends Phaser.Scene {
         super("MainScene");
     }
 
-    preload() {}
+    preload() 
+    {
+
+    }
 
     create() {
+        var g2 = this.add.grid(320, 320, 640, 640, 32, 32, 0xFFDAB9).setAltFillStyle(0xDDA0DD).setOutlineStyle();
         this.snake = new Snake(this);
     }
 
