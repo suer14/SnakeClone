@@ -2,7 +2,7 @@ export default class Snake {
     constructor(scene) {
         this.scene = scene;
         this.timeLastMove = 0;
-        this.moveInterval = 150;
+        this.moveInterval = 250;
         this.tileSize = 16;
         this.direction = Phaser.Math.Vector2.RIGHT;
         this.body = [];        
